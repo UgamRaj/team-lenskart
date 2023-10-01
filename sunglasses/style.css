@@ -1,0 +1,143 @@
+
+
+
+:root {
+    --dark-green-color: #445962;
+    --light-green-color: #329C92;
+    --light-grey-color: rgb(212, 212, 212);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, button span{
+    font-family: LKFuturaStd-Medium, Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border: none;
+    background-color:var(--light-grey-color);
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.picture_section {
+    width: 100vw;
+    height: 20vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+
+.picture_section img {
+    width: 100vw;; 
+    height: auto; 
+    max-width: none; 
+    max-height: 20vh; 
+    cursor: pointer;
+
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2rem 4rem 0;
+    font-size: 26px;
+}
+
+.first_half {
+    color: var(--dark-green-color);
+}
+
+.second_half {
+    color: var(--light-green-color);
+    font-weight: 400;
+}
+
+.offer_container_sunglasses_list img {
+    max-width: 200px; 
+    max-height: 200px; 
+    width: auto; 
+    height: auto; 
+    object-fit: contain;
+    cursor: pointer; 
+    
+}
+.sub_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_container_button{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0 0 20px;
+    /* border-bottom: 1px solid var(--light-grey-color); */
+    
+}
+
+.first_button {
+   padding: 0.6rem 2rem;
+   background-color: var(--light-green-color);
+   color: white;
+
+   border: 1px solid var(--light-green-color);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.second_button {
+    padding: 0.5rem 2rem;
+    background-color: white;
+    color: var(--light-green-color);
+    border: 1px solid var(--light-green-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.paragraph1 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    font-size: 15px
+}
+
+.paragraph2 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.paragraph2_firsthalf {
+    font-weight:bolder;
+    color: var(--dark-green-color);
+}
+
+.paragraph2_secondhalf {
+    font-weight: bolder;
+    color: var(--light-green-color);
+}
+
+button {
+    font-weight: 700;
+    font-size:medium;
+    cursor: pointer;
+}
+
+
