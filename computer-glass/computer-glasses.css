@@ -19,7 +19,9 @@
 .flex-col {
     flex-direction: column;
 }
-
+.cursor-pointer{
+    cursor: pointer;
+}
 /* content-section */
 .computer-glasses-first-section {
     padding: 0 2vw;
@@ -59,10 +61,11 @@
 .second-section-left {
     width: 16.5vw;
     height: calc(100vh + 145px);
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     align-items: first baseline;
     overflow-y: scroll;
-
+    position: sticky;
+    top: 0;
 }
 
 .second-section-left::-webkit-scrollbar {
@@ -71,7 +74,7 @@
 
 .aside-section-none-slider-container {
     align-items: start;
-    border: 2px solid darkmagenta;
+    /* border: 2px solid darkmagenta; */
     width: 100%;
     padding-top: 1rem;
 }
@@ -82,6 +85,7 @@
     text-align: left;
     margin-bottom: 0.8rem;
     width: 100%;
+    cursor: pointer;
 }
 
 .non-slider-item {
@@ -98,49 +102,16 @@
 .aside-check-box-container {
     display: flex;
     justify-content: start;
-    border: 2px solid palevioletred;
+    letter-spacing: 0.05rem;
     margin-bottom: 0.5rem;
     align-items: center;
+    cursor: pointer;
 }
 
 .aside-check-box-container input {
     width: 1.219rem;
     height: 1.219rem;
     margin-right: 0.625rem;
-}
-
-/* Optical cards section */
-.second-section-right {
-    width: 83.5vw;
-    border: 2px solid red;
-    height: calc(100vh + 145px);
-}
-
-
-.second-section-right-heading {
-    padding: 0.375rem 0.625rem;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 0.75rem;
-    background-color: #EDEDED;
-}
-
-.right-section-heading-item {
-    display: inline-flex;
-
-}
-
-.right-section-heading-item .heading-green-para {
-    color: #329c92;
-    font-weight: 600;
-}
-
-.right-section-heading-item1 p {
-    color: #6d6e71;
-    font-size: 0.75rem;
-    font-family: 400;
-    letter-spacing: 2px;
-    line-height: 1.875rem;
 }
 
 .opticals-small-container {
@@ -160,6 +131,7 @@
 
 .opticals-small-container-item {
     justify-content: center;
+    cursor: pointer;
 }
 
 .opticals-small-container-item-image {
@@ -179,7 +151,6 @@
     text-align: center;
 }
 
-
 /* aside-section-slider-container */
 .aside-section-slider-container {
     width: 100%;
@@ -187,6 +158,7 @@
 
 .aside-dropdown-container {
     border-bottom: 1px rgb(109, 110, 113,0.5) solid;
+    cursor: pointer;
 }
 
 .aside-dropdown-heading-box {
@@ -229,28 +201,179 @@
 }
 
 
+/* Optical cards section */
+.second-section-right {
+    width: 83.5vw;
+    border-left: 2px #ededed solid;
+    height: calc(100vh + 145px);
+}
+
+
+.second-section-right-heading {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+.second-section-right-heading-items{
+    width: 100%;
+    padding: 0.375rem 0.625rem;
+    background-color: #EDEDED;
+    justify-content: space-between;
+}
+.item-number-container{
+    width: 100%;
+    text-align: center;
+    padding: 0.55rem 0;
+    color: #333333;
+    font-size: 0.8125rem;
+    letter-spacing: 0.11rem;
+    background-color: white;
+   
+}
+.right-section-heading-item {
+    display: inline-flex;
+
+}
+
+.right-section-heading-item .heading-green-para {
+    color: #329c92;
+    font-weight: 600;
+}
+
+.right-section-heading-item1 p {
+    color: #6d6e71;
+    font-size: 0.75rem;
+    font-family: 400;
+    letter-spacing: 2px;
+    line-height: 1.875rem;
+
+}
 
 
 
+/* second-section-right-opticals */
+.second-section-right-opticals{
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.second-section-right-card-items{
+    width: min-content;
+    border-radius: 0.5rem;
+    border: 1px solid #ebebf0;
+    background-color: white;
+    height: auto;
+}
+
+.large-optical-container{
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 0.7rem;
+    padding-bottom: 0;
+}
+.large-optical-image{
+    margin-top: 1.8rem;
+}
+.large-optical-image img{
+    width: 22.125rem;
+    height: 10.6rem;
+}
+.large-optical-image-container{
+    position: relative;
+}
+.like-button-container{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+.large-optical-content-container{
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
 
 
+.large-optical-rating-container{
+    background-color: #dcdce7;
+    padding: 0.2rem 0.7rem;
+    border: #00bac6;
+    border-radius: 0.6rem;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.large-optical-rating-container .star-icon{
+margin: 0 0.5rem;
+margin-top: -0.188rem;
+}
+.large-optical-card-title-section{
+    color: #333333;
+    margin-top: 1.3rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.large-optical-size{
+    font-size: 0.75rem;
+    color: #333338;
+    margin: 0.5rem 0;
+}
+
+.large-optical-cost-section{
+    font-size: 1rem;
+    display: inline-flex;
+    font-weight: bold;
+    color: #000042;
+    font-size: 0.75rem;
+    
+}
+.large-optical-color-section{
+    justify-content: space-between;
+    width: 100%;
+}
+.large-optical-color-choises .color-items{
+    width: 1.5rem;
+    height: 1.5rem;
+ 
+    border-radius: 50%;
+    
+}
+
+.color-item-border{
+    padding: 0.15rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 0 0.0625rem;
+}
+
+.large-optical-footer-section{
+    background: linear-gradient(90deg, rgb(247, 241, 222) 0%, rgba(247, 241, 222, 0) 100%);
+    margin-top: 0.5rem;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 100%;
+    color: #b59a50;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
 
 
+.card-hover-image{
+    display: none;
+    position: absolute;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.large-optical-image:hover .card-hover-image{
+    display: block;
+}
 
 
 
