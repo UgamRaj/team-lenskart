@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header{
+    height: 155px;
+    background-color: black;
+}
+.head-image{
+    width: 100vw;
+    height:auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.head-image img{
+    width: 100%
+    }
+.main-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100vw;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+}
+.category{
+    font-size: 1.625rem;
+    letter-spacing: 0.1875rem;
+    font-family: LKFuturaStd-Medium, Arial, Helvetica, sans-serif;
+    display: block;
+    color: rgb(50, 156, 146);
+    text-align: center;
+}
+.category .option{
+    color: rgb(68, 89, 98);
+    font-family: LKFuturaStd-Heavy, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.product-image{
+    cursor: pointer;
+    width: auto;
+    height:auto;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product-image .first-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 50px;
+}
+.product-image .second-box{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-right: 50px;
+}
+.product-image img{
+    width: 25%;
+    height: 15%;
+    padding: 40px 30px 60px 30px;
+}
+.container .button{
+    background: rgb(59, 159, 149);
+    color: rgb(255, 255, 255);
+    width: 10%;
+    min-width: 150px;
+    font-family: LKFuturaStd-Heavy, Arial, Helvetica, sans-serif;
+    padding: 9px 15px;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin: auto;
+}
+.container .p{
+    font-size: 0.875rem;
+    color: rgb(66, 66, 68);
+    letter-spacing: 10px;
+    font-weight: light;
+}
+hr{
+    width: 90%;
+    height: 1px;
+    margin: auto;
+    background-color: #d4d4d4;
+}
+.first-box button svg, .second-box button svg{
+    font-size: 3rem;
+    background-color: white;
+}
+button{
+    border: none;
+}
+.footer{
+    height: 500px;
+    background-color: black;
+}
