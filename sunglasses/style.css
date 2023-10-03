@@ -1,6 +1,3 @@
-
-
-
 :root {
     --dark-green-color: #445962;
     --light-green-color: #329C92;
@@ -89,6 +86,8 @@ h1, h2, h3, h4, h5, h6, p, button span{
 .second_display {
     display: none;
     gap: 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub_container {
@@ -103,12 +102,15 @@ h1, h2, h3, h4, h5, h6, p, button span{
     justify-content: center;
     gap: 0.4rem;
     padding: 0 0 20px;
+    
+}
+
+.first_button, .second_button {
     font-weight: 700;
     font-size:medium;
     cursor: pointer;
-    /* border-bottom: 1px solid var(--light-grey-color); */
-    
 }
+
 
 .first_button {
    padding: 0.6rem 2rem;
@@ -151,93 +153,9 @@ h1, h2, h3, h4, h5, h6, p, button span{
     color: var(--light-green-color);
 }
 
-/* button {
-    font-weight: 700;
-    font-size:medium;
-    cursor: pointer;
-} */
-
-/* .slide_button_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    size: 3rem;
-} */
-
-.slide_button_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    transition: background-color 0.3s;
+.previous_icon {
+    border: 2px border blue;
 }
 
-.slide_button_right:hover {
-    background-color: #e0e0e0;
-}
-
-
-
-.slide_button_left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    bottom: 20px;
-    left: 20px; /* Adjust the 'left' property to position it on the left side */
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.slide_button_left:hover {
-    background-color: #e0e0e0;
-}
-
-.slide_button_left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    bottom: 20px;
-    left: 20px; /* Adjust the 'left' property to position it on the left side */
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-
-.slide_button_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    bottom: 20px;
-    right: 20px; /* Adjust the 'right' property to position it on the right side */
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
 
 
