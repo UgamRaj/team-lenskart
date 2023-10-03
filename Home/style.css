@@ -11,15 +11,6 @@
   --white: #fff;
 }
 
-/* top */
-/* :root {
-  --text: #333368;
-
-  --dark-blue-100: #000042;
-  --dark-blue-75: #66668e;
-} */
-/* bottom */
-
 html {
   font-size: 62.5%;
 }
@@ -158,7 +149,7 @@ header {
   justify-content: space-between;
   width: 100%;
   background-color: #fbf9f7;
-  padding: 0.3rem 0;
+  padding: 0.3rem 0 0.5rem;
 }
 .nav-bottem-layer .nav-bottem-left {
   display: flex;
@@ -203,6 +194,7 @@ header {
   width: 100%;
   padding: 0.5rem 1.6rem;
   margin-top: 16rem;
+  height: 17.5rem; /* fixed the height so on hover overflow should be stop*/
 }
 
 .nav-bottom-forth-layer .card-container {
@@ -215,15 +207,91 @@ header {
   display: flex;
   width: 16.3%;
   flex-direction: column;
+  cursor: pointer;
   align-items: center;
   background: #fff;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem;
   margin: 0.4rem 1rem 0.8rem;
+  transition: all 0.25s ease-in-out;
 }
+
+/* .nav-bottom-forth-layer .card-container .onhover .glass-text {
+  border-bottom: 1px solid #cfcdcd;
+} */
+
+.nav-bottom-forth-layer .card-container .onhover {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bottom-forth-layer .card-container .dropdown-content {
+  display: none;
+  width: 100%;
+  background: #fff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top: 1px solid #cfcdcd;
+  position: absolute;
+  top: 100%;
+  transition: all 0.3s ease-in-out;
+  /* overflow: hidden; */
+}
+.nav-bottom-forth-layer .card-container .dropdown-content .dropdown-text {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #cfcdcd;
+}
+
+.nav-bottom-forth-layer .card-container .dropdown-content .dropdown-text.no-b {
+  border-bottom: 0;
+}
+
+.nav-bottom-forth-layer .card-container .dropdown-content .align {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+.d-view-all {
+  padding: 1.5rem 1rem;
+  color: rgb(77, 156, 206);
+  font-size: 1.4rem;
+}
+
+.nav-bottom-forth-layer .card-container .hover-change:hover {
+  background-color: #f7f2ed;
+  cursor: pointer;
+}
+
+.nav-bottom-forth-layer .card-container .dropdown-content .align p {
+  font-size: 1.2rem;
+  letter-spacing: -0.05rem;
+}
+
+.nav-bottom-forth-layer .card-container .dropdown-content .align .bold {
+  font-weight: 700;
+}
+
+.nav-bottom-forth-layer .card-container .card:hover .glass > img {
+  transform: scale(0.95);
+  padding: 0.4rem;
+}
+
+.nav-bottom-forth-layer .card-container .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0;
+}
+
+.nav-bottom-forth-layer .card-container .card:hover .dropdown-content {
+  display: initial;
+}
+
+/* .nav-bottom-forth-layer .card-container .card:hover .glass-text > p {
+} */
 
 .nav-bottom-forth-layer .card-container .card .glass {
   padding-bottom: 0.8rem;
+  transition: all 0.25s ease-in-out;
 }
 
 .nav-bottom-forth-layer .card-container .card .glass img {
@@ -245,6 +313,39 @@ header {
 }
 .image img {
   width: 100%;
+}
+
+.main-top-image {
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* carousal */
+.corousal-auto {
+  width: 100%;
+  height: 42rem;
+  margin-bottom: 1rem;
+  background-image: url(./Images/auto-1.webp);
+  background-size: 100% 100%;
+  cursor: pointer;
+  animation: changeImage 20s linear 5s infinite;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url(./Images/auto-1.webp);
+  }
+  25% {
+    background-image: url(./Images/auto-2.webp);
+  }
+  50% {
+    background-image: url(./Images/auto-3.webp);
+  }
+  75% {
+    background-image: url(./Images/auto-4.webp);
+  }
+  100% {
+    background-image: url(./Images/auto-1.webp);
+  }
 }
 
 .text-in-middle {
@@ -460,14 +561,21 @@ header {
 }
 .border-b .right-link a {
   color: rgb(50, 156, 146);
+  text-decoration: none;
 }
 
 .videos-section {
   width: 100%;
   background-color: #fff092;
+}
+
+.videos-section .video-inner-section {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  padding: 0 5%;
+  justify-content: center;
+  margin: 0 auto;
+  /* padding: 0 5%; */
 }
 
 .videos-section .video-heading h3 {
@@ -486,7 +594,6 @@ header {
 }
 
 .custumer-review .custumer {
-  padding: 0 2%;
   width: 38%;
 }
 
@@ -596,4 +703,35 @@ header {
   color: #fff;
   font-size: 1.4rem;
   letter-spacing: 0.07rem;
+}
+
+.footer-bottom-part .rightpart {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 2rem;
+}
+
+.footer-bottom-part .rightpart .b-right {
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+
+.footer-bottom-part .rightpart .b-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 0.7rem;
+}
+
+.footer-bottom-part .rightpart .b-icons a {
+  padding-left: 1rem;
+  font-size: 2.2rem;
+}
+
+.blue-text {
+  color: rgb(50, 156, 146);
+  cursor: pointer;
 }
