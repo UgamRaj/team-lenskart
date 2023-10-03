@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lenskart-eyeglasses</title>
     <link rel="icon" type="image/x-icon" href="https://static1.lenskart.com/media/desktop/img/Sep23/13-Sep/lenskart-logo-new-144x144.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eyeglasses.css">
 </head>
 <body>
 <script>
@@ -13,16 +13,14 @@
         var parentSection = button.parentElement.parentElement; 
         var firstBox = parentSection.querySelector(".first-box");
         var secondBox = parentSection.querySelector(".second-box");
-    
         firstBox.style.display = "none";
-        secondBox.style.display = "block";
+        secondBox.style.display = "flex";
     }
     function displayFirst(button) {
         var parentSection = button.parentElement.parentElement;  
         var firstBox = parentSection.querySelector(".first-box");
         var secondBox = parentSection.querySelector(".second-box");
-    
-        firstBox.style.display = "block";
+        firstBox.style.display = "flex";
         secondBox.style.display = "none";
     }
 </script>
