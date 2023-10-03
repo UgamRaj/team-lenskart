@@ -139,6 +139,10 @@ body{
     color: #000042;
     opacity: 1;
 }
+.age-group-container .aside-check-box-container:hover input{
+    color: #2a2a2a;
+    opacity: 0.5;
+}
 
 .aside-check-box-container input {
     width: 1.219rem;
