@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    height: 100vh;
     margin: 0;
 }
 
@@ -29,17 +30,18 @@ h1, h2, h3, h4, h5, h6, p, button span{
 /* header section styling */
 .header {
   height: 155px;
-  background-color: black;
+  /* background-color: black; */
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 10;
 }
-/* .header {
-  height: 155px;
-  width: 100%;
 
-} */
+.main-section-middle-one {
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
 
 .nav {
   width: 100%;
@@ -309,6 +311,10 @@ h1, h2, h3, h4, h5, h6, p, button span{
   padding: 0px;
 }
 
+.nav-bottem-layer .nav-bottem-left .grid-container a {
+  line-height: 1.5rem;
+}
+
 .icon-svg-div {
   font-size: 7px;
   display: flex;
@@ -478,7 +484,7 @@ a {
       }
 
       .get-your>p {
-          font-size: 3.125rem;
+          font-size: 3rem;
       }
 
       .a-certified>p {
@@ -772,6 +778,7 @@ right: -0.25rem;
     justify-content: center;
     gap: 0.4rem;
     padding: 0 0 20px;
+    margin: 1rem;
     
 }
 
@@ -1017,6 +1024,7 @@ right: -0.25rem;
     .offer_container_sunglasses_list div svg {
         font-size: 20px;
     }
+
 }
 
 /* Media query for screens below 400px */
@@ -1203,12 +1211,40 @@ right: -0.25rem;
   .home-nav-on-phone{
       display: inline;
   }
+
+  .nav-top-layer, .nav-bottem-layer{
+    display: none;
+}
   .nav-logo-number .lenskart-logo{
       display: none;
   }
   .nav-logo-number .logo-for-phone{
       display: block;
       width: 3.5rem;
+  }
+
+  .header {
+    position: relative;
+    
+  }
+
+  .nav {
+    position: relative;
+    padding: 0;
+  }
+
+  .nav-middle-layer {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .home-nav-on-phone {
+    position: relative;
+    top: 45px;
   }
 
 }
