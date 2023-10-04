@@ -250,7 +250,9 @@ body{
     width: 5rem;
     cursor: pointer;
 }
-
+.nav-logo-number .logo-for-phone{
+    display: none;
+}
 /* ------------------------------------------------------------------ */
 /* common */
 .flex {
@@ -891,5 +893,12 @@ input:checked+.slider:before {
     }
     .header{
         height: auto;
+    }
+    .nav-logo-number .logo-for-phone{
+        display: block;
+        width: 3.5rem;
+    }
+    .nav-logo-number .lenskart-logo{
+        display: none;
     }
 }
