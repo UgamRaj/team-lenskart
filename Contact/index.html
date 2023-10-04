@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./"/>
+    
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://static1.lenskart.com/media/desktop/img/Sep23/13-Sep/lenskart-logo-new-144x144.png"
+    />
+    <title>
+      Eyeglasses, Sunglasses, Contact Lens Online - Lenskart IN Clone
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config={
+        theme:{
+            extend:{
+              fontSize: {
+                  'sm': '15px',
+                  'lig':'14px',
+                  'reg':'20px',
+                  },
+             fontFamily: {
+                  'LKFuturaMdBT': ['futura-md-bt-medium', sans-serif],
+                  'LKFuturaStdMedium':['futura-std-medium', sans-serif],
+                  'LKSansRegular':['the-sans-regular', sans-serif],
+                  'LKsansHari':['work-sans-hairline', sans-serif],
+
+                 },
+             }
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="nav">
+          <div class="nav-top-layer">
+            <div class="nav-top-layer-left">
+              <ul>
+                <li class="pad">
+                  <a href="#">Do More,Be More</a>
+                </li>
+
+                <li class="left-vertical-line">
+                  <a href="#">Tryin3D</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">StoreLocator</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Quality</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">USA</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Singapore</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">UAE</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">John Jacobs</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Aqualens</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Cobrowsing</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Engineering Blog</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Lenskart Franchise</a>
+                </li>
+                <li class="left-vertical-line">
+                  <a href="#">Lenskart Optom Partner Program</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="nav-middle-layer">
+            <div class="nav-logo-number">
+              <a href="#">
+                <img
+                  class="lenskart-logo"
+                  src="./Images/main_logo.svg"
+                  alt="main logo"
+                />
+              </a>
+              <img
+                class="phone-number"
+                src="./Images/phone_number.svg"
+                alt="Phone number"
+              />
+            </div>
+
+            <div class="nav-search">
+              <input type="text" placeholder="What are you looking for ?" />
+            </div>
+
+            <div class="nav-middle-link">
+              <div>
+                <a href="#">TrackOrder</a>
+              </div>
+              <div>
+                <a href="">Sign In & Sign Up</a>
+              </div>
+              <div class="nav-link">
+                <div class="nav-link-icon">
+                  <svg
+                    width="1.7em"
+                    height="1.7em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#WishListNew_svg__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M11.993 5.136c-2-2.338-5.333-2.966-7.838-.826s-2.858 5.719-.89 8.25c1.635 2.105 6.585 6.544 8.207 7.98.182.162.272.242.378.274a.504.504 0 0 0 .286 0c.106-.032.197-.112.378-.273 1.623-1.437 6.573-5.876 8.208-7.98 1.967-2.532 1.658-6.133-.89-8.251-2.549-2.118-5.84-1.512-7.839.826Z"
+                        stroke="#333368"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="WishListNew_svg__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span>Wishlist</span>
+              </div>
+              <div class="nav-link">
+                <div class="nav-link-icon">
+                  <svg
+                    width="1.7em"
+                    height="1.7em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 9V6a4 4 0 0 0-8 0v3m-4.408 1.352-.6 6.4c-.17 1.82-.256 2.73.046 3.432a3 3 0 0 0 1.32 1.45C5.03 22 5.944 22 7.771 22h8.458c1.828 0 2.742 0 3.413-.366a3 3 0 0 0 1.32-1.45c.302-.703.217-1.612.046-3.432l-.6-6.4c-.144-1.537-.216-2.305-.561-2.886a3 3 0 0 0-1.292-1.176C17.945 6 17.173 6 15.629 6H8.371c-1.543 0-2.315 0-2.925.29a3 3 0 0 0-1.292 1.176c-.346.581-.418 1.35-.562 2.886Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <span>Cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-bottem-layer">
+            <div class="nav-bottem-left">
+              <div>
+                <a href="#">EYEGLASSES</a>
+
+                <!-- Top layer -->
+
+                <!-- Bottom layer -->
+              </div>
+              <div>
+                <a href="#">COMPUTER GLASSES</a>
+              </div>
+              <div>
+                <a href="#">KIDS GLASSES</a>
+              </div>
+              <div>
+                <a href="#">CONTACT LENSES</a>
+              </div>
+              <div>
+                <a href="#">SUNGLASSES</a>
+              </div>
+              <div>
+                <a href="#">HOME EYE-TEST</a>
+              </div>
+              <div>
+                <a href="#">STORE LOCATOR</a>
+              </div>
+            </div>
+            <div class="nav-bottem-right">
+              <div class="nav-bottom-image-div">
+                <img src="./Images/3dtrylogo.webp" alt="3D try on" />
+              </div>
+              <div class="nav-bottom-image-div">
+                <img src="./Images/blulogo.webp" alt="blu" />
+              </div>
+              <div class="nav-bottom-image-div">
+                <img src="./Images/goldlogo.webp" alt="gold" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+<!-- ==================================================================================================================== -->
+      <div class="nav-bottom-forth-layer">
+        <!-- <div class="card-container"> -->
+      <div class="container mx-auto">
+        <div class="h-12 bg-[#8A8A8A] pt-2 ">
+          <h2 class="text-center text-white text-base text-sm fntclass">ORDER WITH CONTACT LENS EXPERT - GIVE MISSED CALL ON <span class="text-[#DDC786]">+91 847-000-7367</span></h2>
+        </div>  
+          <div class="mt-2 mb-4"><img src="https://static1.lenskart.com/media/desktop/img/Sep23/13-Sep/fest211.jpg"></div> 
+          
+         <!-- =============================== | Grid | ===================================== -->
+            <div class="grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-4">
+    
+          <!-- ---------------------- This is section first--------------------- -->
+              <div class="p-0 ml-3 border-2 border-gray-300 auto-rows-max h-min"> 
+                  <h2 class="brands text-[#2B9CB3] font-LKFuturaStdMedium">DISPOSABILITY</h2>
+                  <div class="flex items-center font-LKFuturaStd-Medium" >
+                    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/monthly.jpg'></div>
+                 
+                    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Monthly</div>  
+                     <div class="colbox3"> ></div>  
+              </div>
+              <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+              <div class="flex items-center">
+                <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/day-n-night.jpg'></div>
+                <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Monthly Day and Night</div>  
+                 <div class="colbox3"> ></div>  
+          </div>
+          <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+          <div class="flex items-center">
+            <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Sep20/23Sep/aquadailies.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Daily </div>  
+             <div class="colbox3"> ></div>  
+      </div>
+      <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+             
+              <div class="flex items-center">
+                <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/13-Nov-16/aqua1234.jpg'></div>
+                <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Color Lenses </div>  
+                 <div class="colbox3"> ></div>  
+          </div>
+          <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+          <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/yearly.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Yearly </div>  
+             <div class="colbox3"> ></div>  
+      </div>
+      <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+      <div class="flex items-center">
+        <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/biweekly.jpg'></div>
+        <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">2-weekly</div>  
+         <div class="colbox3"> ></div>  
+      </div>
+    </div>
+    <!-------------------------- First Section end -------------------------->
+    
+    <!------------------------ Second Section Starting----------------------->
+          <div class="p-0 ml-3 border-2 border-gray-300"> 
+            <h2 class="brands text-[#2B9CB3] font-LKFuturaStdMedium">BRANDS</h2>
+            <div class="flex items-center font-LKFuturaStd-Medium" >
+              <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/aqLogos.png'></div>
+              <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Aqualens</div>  
+               <div class="colbox3"> ></div>  
+        </div>
+        <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+        <div class="flex items-center">
+          <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/bausch-and-lomb.jpg'></div>
+          <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Bausch & Lomb</div>  
+           <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+      <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/soflens.jpg'></div>
+      <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Soflens </div>  
+       <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+       
+        <div class="flex items-center">
+          <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/johnson.jpg'></div>
+          <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Johnson & Johnson </div>  
+           <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+      <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/Lenskart-Website-Banners/iconnect.jpg'></div>
+      <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Iconnect</div>  
+       <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/Lenskart-Website-Banners/alcon-cl-b.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Alcon</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/Acuvue.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Acuvue</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/optix.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Optix</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/focus.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Focus</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/pure.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Purevision</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/freshlook.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Freshlook</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        <div class="flex items-center">
+            <div class="py-2"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/dailies.jpg'></div>
+            <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Dailies</div>  
+            <div class="colbox3"> ></div>  
+    </div>
+    
+    </div>
+    
+    <!------------------------- Second Section Ending --------------------- -->
+    <!-----------------------------Third Section Starting -------------------------- -->
+    <div class="p-0 ml-3 border-2 border-gray-300 h-min"> 
+      <h2 class="brands text-[#2B9CB3] font-LKFuturaStdMedium">POWER</h2>
+      <div class="flex items-center font-LKFuturaStd-Medium" >
+        <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Sep20/23Sep/aqua4.jpg'></div>
+        <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">[-] SPH Power <br /><span>(CY <0.5) </span></div>  
+         <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/plus-sph.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">[+] SPH Power <br /><span>(CY <0.5) </span></div>  
+     <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/10-Oct-Contact-Lenses/cyl.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">CYL Power <br /><span>(CY >0.75) </span> </div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+    <div class="flex items-center mb-9">
+      <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Sep20/23Sep/aqua2.jpg'></div>
+      <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Toric Power</div>  
+      <div class="colbox3"> ></div>  
+      </div>
+      <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+    <h2 class="brands text-[#2B9CB3] font-LKFuturaStdMedium">LENS SOLUTION</h2>
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/25-June/aqua.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Aqualens Confort </div>  
+     <div class="colbox3"> ></div>  
+    </div>
+    
+    
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/Lenskart-Website-Banners/bio-2804.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Bio True </div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/Lenskart-Website-Banners/renu-2804.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Renu Fresh</div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/Lenskart-Website-Banners/opti-2804.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Opti-Free Replenish</div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    </div>
+    <!------------------------- Third Section Ending ----------------------->
+    <!-----------------------------Fourth Section Starting ---------------------------->
+    <div class="p-0 ml-3 border-2 border-gray-300 h-min"> 
+      <h2 class="brands text-[#2B9CB3] font-LKFuturaStdMedium">COLOR</h2>
+      <div class="flex items-center font-LKFuturaStd-Medium" >
+        <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/99x53Reviss.png'></div>
+        <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Aquacolor Premium</div>  
+         <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/13-Nov-16/aqua1234.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Aquacolor</div>  
+     <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static5.lenskart.com/images/cust_mailer/Nov-12th/freshlook_color_blend.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Freshlook </div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/FinalLilyBlue.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Clalen </div>  
+     <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/Sep20/23Sep/color.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Color with <br /><spam> no Power</spam></div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <div class="flex items-center">
+    <div class="py-1"><img src='https://static.lenskart.com/images/cust_mailer/13-Nov-16/fresh.jpg'></div>
+    <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Color without <br /><spam> CYL Power</spam></div>  
+    <div class="colbox3"> ></div>  
+    </div>
+    <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+    <h2 class="brands text-[#2B9CB3] font-LKFuturaStdMedium mt-9">LENS CASE</h2>
+      <div class="flex items-center font-LKFuturaStd-Medium" >
+        <div class="py-1"><img src='https://static1.lenskart.com/media/desktop/img/case.jpg'></div>
+        <div class="text-left w-6/12 ml-10 font-LKFuturaStdMedium text-lig text-[#333333]">Lens Case</div>  
+         <div class="colbox3"> ></div>  
+    </div>
+    </div>
+    <!------------------------- Fourth Section Ending ----------------------->
+            </div>
+    <!--==================Grid End================-->
+          <div class="ml-7 mt-16 pb-9">
+              <h2 class="buyContactH3 mb-3">Buy Contact lenses Online from Lenskart starting at Rs 139 only</h2>
+              <p class="buyContactP text-slate-700">Buy Contact Lens at the best prices including Aqualens. One stop for all leading brands. Free Contact Lens Trial. Try Color Contact Lens. Free Contact Lens Solution</p>
+            </div>
+        </div>
+      </div>
+      <!-- just bottom the nav -->
+         
+        <!-- </div> -->
+      </div>
+
+
+<!-- =============================================================================================================================== -->
+
+
+      
+    </main>
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-left-link">
+          <div class="services-link">
+            <p>Services</p>
+            <ul>
+              <li>
+                <a href="#">Store Locator</a>
+              </li>
+              <li>
+                <a href="#">Buying Guide</a>
+              </li>
+              <li>
+                <a href="#">Frame Size</a>
+              </li>
+            </ul>
+          </div>
+          <div class="About-link">
+            <p>About Us</p>
+            <ul>
+              <li>
+                <a href="#">We Are Hiring</a>
+              </li>
+              <li>
+                <a href="#">Refer And Earn</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Lenskart Coupons</a>
+              </li>
+            </ul>
+          </div>
+          <div class="Help-link">
+            <p>Help</p>
+            <ul>
+              <li>
+                <a href="#">FAQ's</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right-link">
+          <div class="applinks">
+            <div class="google-play-store app">
+              <img src="./Images/play-store.svg" alt="Google Play" />
+            </div>
+            <div class="apple-store app">
+              <img src="./Images/app-store.svg" alt="App Store" />
+            </div>
+          </div>
+          <div class="app-releated-text">
+            <p>Download Lenskart App to buy</p>
+            <p>Eyeglasses, Sunglasses and Contact Lenses</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom-part">
+        <div class="leftpart">
+          <a href="#">T&C</a>
+          <a href="#">Privacy</a>
+          <a href="#">Disclaimer</a>
+        </div>
+        <div class="rightpart">
+          <span>Version 1.0.0</span>
+          <span>||</span>
+          <span class="followus">Follow Us</span>
+          <a href="#"><img src="./Images/facebook.png"></a>
+          <a href="#"><img src="./Images/instagram.png"></a>
+          <a href="#"><img src="./Images/twitter.png"></a>
+        </div>
+      </div>
+    </footer>
+
+    <link href="https://www.dafontfree.net/embed/d29yay1zYW5zLWhhaXJsaW5lJmRhdGEvMTkvdy85MjY0OS9Xb3JrU2Fucy1IYWlybGluZS5vdGY" rel="stylesheet" type="text/css"/>
+  </body>
+</html>
