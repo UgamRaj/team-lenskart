@@ -7,13 +7,6 @@
 body{
     height: 100vh;
 }
-.header {
-    height: 155px;
-    background-color: black;
-    position: sticky;
-    width: 100%;
-    top: 0;
-}
 
 /* common */
 .flex {
@@ -27,6 +20,199 @@ body{
 .cursor-pointer{
     cursor: pointer;
 }
+/* --------------------------------------------------------------------------- */
+.header {
+    height: 155px;
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+.header {
+    height: 155px;
+    width: 100%;
+
+}
+
+  .nav {
+    width: 100%;
+
+    /* padding: 1rem 1rem 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    /* background-color: var(--white); */
+    background-color: white;
+  }
+  
+  .nav-top-layer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.625rem;
+    margin-top: 1.25rem;
+    padding: 0 2.3125rem;
+    width: 100%;
+  }
+  
+  .nav-top-layer .nav-top-layer-left {
+    width: 75%;
+  }
+  
+  .nav-top-layer .nav-top-layer-left ul {
+    list-style-type: none;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .left-vertical-line {
+    border-left: 1px solid #000042;
+    padding: 0px 0.5vw;
+  }
+  .pad {
+    padding-right: 0.5vw;
+  }
+  
+  .nav-top-layer a {
+    text-decoration: none;
+    color: var(--dark-blue-100);
+    letter-spacing: 0.0006rem;
+    white-space: nowrap;
+    font-size: 0.75rem;
+  }
+  
+  /* middle navbar */
+  .nav-middle-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.625rem 0 1.25rem;
+    min-height: 3.125rem;
+    margin-right: 0px;
+    margin-top: 0.625rem;
+  }
+  
+  .nav-middle-layer .nav-logo-number {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 23.6%;
+    align-items: center;
+  }
+  
+  .nav-middle-layer .nav-logo-number .lenskart-logo {
+    height: 3.5625rem;
+  }
+  
+  .nav-middle-layer .nav-logo-number .phone-number {
+    width: 7.8125rem;
+    height: 34px;
+    margin-right: -1.375rem;
+  }
+  
+  .nav-middle-layer .nav-search {
+    width: 33%;
+  }
+  
+  .nav-middle-layer .nav-search input {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0.25rem 7px;
+    border: 1px solid rgba(0, 0, 66, 0.5);
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 66, 0.5);
+    outline: none;
+    user-select: initial;
+  }
+  
+  ::placeholder {
+    letter-spacing: 0.0313rem;
+  }
+  
+
+.nav-search span{
+    display: none;
+}
+.scanner-on-mobile img{
+    display: none;
+}
+  .nav-middle-layer .nav-middle-link {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.025rem;
+    line-height: 1.25rem;
+    width: 30%;
+    padding-right: 1.625rem;
+  }
+  
+  .nav-middle-layer .nav-middle-link a {
+    text-decoration: none;
+    color: #000042;
+    font-size: 0.8125rem;
+  }
+  
+  .nav-middle-layer .nav-middle-link .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .nav-middle-layer .nav-middle-link .nav-link .nav-link-icon {
+    padding-right: 10px;
+  }
+  
+  .nav-bottem-layer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fbf9f7;
+    padding: 0.1875rem 0 0.3125rem;
+  }
+  .nav-bottem-layer .nav-bottem-left {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    padding-left: 1.625rem;
+    white-space: nowrap;
+  }
+  
+  .nav-bottem-layer .nav-bottem-left a {
+    text-decoration: none;
+    color: #000042;
+    letter-spacing: 0.0056rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 3.75rem;
+    letter-spacing: 0.0313rem;
+  }
+  
+  .nav-bottem-layer .nav-bottem-right {
+    display: flex;
+    /* width: 20%; */
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.5625rem;
+  }
+  
+  .nav-bottem-layer .nav-bottem-right .nav-bottom-image-div {
+    height: 2.5rem;
+    padding: 0 0.125rem;
+  }
+  
+  .nav-bottem-layer .nav-bottem-right img {
+    height: 100%;
+    border-radius: 0.3125rem;
+  }
+
+  /* ---------------------------------------------------------------------------------------------- */
+
+
+
 .computer-glasses{
     position: fixed;
     top: 155px;
@@ -526,17 +712,48 @@ input:checked+.slider:before {
 
 
 
+.nav-search span{
+    display: none;
+}
+.scanner-on-mobile img{
+    display: none;
+}
 
 
+@media screen and (max-width:1340px){
+    .nav-bottem-layer .nav-bottem-left .hide-on-overflow{
+        display: none;
+    }
+}
+@media screen and (max-width:1200px) {
+  .nav-top-layer-left ul .hide-on-1200{
+        display: none;
+    }
+}
 
+@media screen and (max-width:984px) {
+    .nav-top-layer-left ul .hide-on-984{
+        display: none;
+    }
+}
 
-
-
-
-
+@media screen and (max-width:1064px){
+    .nav-bottem-layer .nav-bottem-right{
+        display: none;
+    }
+    .nav-bottem-layer .nav-bottem-left{
+        width: 100%;
+    }
+    .hide-on-1064{
+        display: none;
+    }
+    .nav-middle-layer .nav-search{
+        width: 25%;
+    }
+}
 
 @media screen and (max-width:800px) {
-    .hide-on-tab{
+    .hide-on-tab,.nav-top-layer .nav-top-layer-left ul .hide-on-tab{
         display: none;
     }
     .second-section-right{
@@ -545,11 +762,50 @@ input:checked+.slider:before {
     .second-section-right-card-items{
         width: 48%;
     }
+    .nav-middle-layer .nav-logo-number .phone-number{
+        display: none;
+    }
+    .nav-bottem-layer .nav-bottem-left a,.nav-middle-layer .nav-middle-link a{
+        font-size: 0.675rem;
+    }
+
+}
+@media screen and (max-width:612px) {
+    .hide-on-612{
+        display: none;
+    }
 }
 
-
-@media screen and (max-width:500px) {
+@media screen and (max-width:520px) {
     .second-section-right-card-items{
         width: min-content;
+    }
+    .nav-top-layer{
+        display: none;
+    }
+    .nav-search span{
+        display: initial;
+    }
+    .nav-search input{
+        display: none;
+    }
+    .nav-search{
+        text-align: center;
+    }
+    .scanner-on-mobile img {
+        display: initial;
+        width: 1.2rem;
+        height: 1.2rem;
+
+    }
+    .scanner-on-mobile a{
+        display: none;
+    }
+    .nav-middle-layer .nav-middle-link{
+        padding-right: 0;
+        width: 32%;
+    }
+    .nav-middle-layer .nav-middle-link .nav-link .nav-link-icon{
+        padding: 0;
     }
 }
