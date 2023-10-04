@@ -183,11 +183,158 @@ h1, h2, h3, h4, h5, h6, p, button span{
     color: var(--light-green-color);
 }
 
-/* footer section styling */
-.footer{
-    height: 500px;
-    background-color:lightgrey;
+.offer_container_sunglasses_list div svg {
+    font-size: 3rem;
 }
+
+/* footer section styling */
+.footer {
+    background-color: rgb(0, 0, 66);
+  }
+ 
+  
+  .footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 3.75rem 2.5rem;
+    color: #fff;
+  }
+  
+  .footer-links .footer-left-link {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+  
+  .footer-links .footer-left-link p {
+    line-height: 1.5625rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 0 0.625rem;
+  }
+  
+  .footer-links .footer-left-link ul li {
+    list-style-type: none;
+    line-height: 1.0625rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    letter-spacing: 0.0187rem;
+  }
+  
+  .footer-links .footer-left-link ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links .footer-right-link {
+    width: 25%;
+    margin-top: 3.125rem;
+    /* border: 1px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links .footer-right-link .applinks {
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.625rem 0 1.25rem;
+  }
+  
+  .footer-links .footer-right-link .app-releated-text p {
+    text-align: center;
+    font-size: 0.875rem;
+    letter-spacing: 0.0437rem;
+    line-height: 1.4287;
+  }
+  
+  .footer hr {
+    width: 92.4%;
+    margin: 0 auto;
+  }
+  
+  .footer-bottom-part {
+    padding: 2.5rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-bottom-part .leftpart {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+  }
+  
+  .footer-bottom-part .leftpart a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.875rem;
+    letter-spacing: 0.0437rem;
+  }
+  
+  .footer-bottom-part .rightpart {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 1.25rem;
+  }
+  
+  .footer-bottom-part .rightpart .b-right {
+    font-size: 0.8125rem;
+    color: #fff;
+    line-height: 1.5;
+    padding-left: 0.625rem;
+  }
+  
+  .footer-bottom-part .rightpart .b-icons {
+    display: flex;
+    align-items: center;
+    padding-left: 0.4375rem;
+  }
+  
+  .footer-bottom-part .rightpart .b-icons a {
+    padding-left: 0.625rem;
+    font-size: 1.375rem;
+  }
+
+  @media screen and (max-width:1000px) {
+    .footer-links .footer-left-link{
+      width: 55%;
+    }
+  }
+
+
+  @media screen and (max-width:600px) {
+    .footer-links{
+      flex-direction: column;
+    }
+    .footer-links .footer-left-link{
+      width: 100%;
+    }
+    .footer-links .footer-right-link{
+      width: 100%;
+    }
+    .footer-bottom-part{
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    .footer-bottom-part .leftpart{
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .footer-links .footer-left-link{
+      gap: 2rem;
+      flex-wrap: 2rem;
+    }
+  }
 
 /* Media query for screens below 500px */
 @media screen and (min-width: 401px) and (max-width: 500px) {
@@ -227,10 +374,9 @@ h1, h2, h3, h4, h5, h6, p, button span{
         justify-content: center;
     }
 
-    .icon {
-        font-size: 0.5rem;
+    .offer_container_sunglasses_list div svg {
+        font-size: 20px;
     }
-
 }
 
 /* Media query for screens below 400px */
