@@ -202,7 +202,9 @@ body{
 }
 
 
-
+.nav-bottem-layer .nav-bottem-left .grid-container a {
+    line-height: 1.5rem;
+  }
 
 
 
@@ -844,7 +846,9 @@ input:checked+.slider:before {
     .nav-bottem-layer .nav-bottem-left a,.nav-middle-layer .nav-middle-link a{
         font-size: 0.675rem;
     }
-
+    .first-section-up{
+        display: none;
+    }
 }
 @media screen and (max-width:612px) {
     .hide-on-612{
