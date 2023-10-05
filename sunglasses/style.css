@@ -1,3 +1,4 @@
+/* used variables for different colors */
 :root {
     --dark-green-color: #445962;
     --light-green-color: #329C92;
@@ -5,12 +6,14 @@
     --dark-grey-color: #424244;
 }
 
+/* for viewport */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* to display vertically */
 .main-section {
     display: flex;
     flex-direction: column;
@@ -18,10 +21,22 @@
     margin: 0;
 }
 
+/* to give font for all writing part */
 h1, h2, h3, h4, h5, h6, p, button span{
     font-family: LKSana-Bold, Arial, Helvetica, sans-serif;
 }
 
+/* header section styling */
+.header {
+    height: 155px;
+    background-color: lightgrey;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/* styling the horizontal line */
 .divider {
     border: none;
     background-color:var(--light-grey-color);
@@ -31,6 +46,7 @@ h1, h2, h3, h4, h5, h6, p, button span{
     display: block;
 }
 
+/* to fit the ad picture correct to viewport */
 .picture_section {
     width: 100%;
     max-height: 20vh;
@@ -42,9 +58,18 @@ h1, h2, h3, h4, h5, h6, p, button span{
     width: 100%;
     height: auto;
     max-height: 100%;
-    /* object-fit: contain; */
 }
 
+/* to give styling for every container */
+.sub_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to hightlight the heading in every container */
 .matter_container h2 {
     text-align: center;
     letter-spacing: 2px;
@@ -52,18 +77,21 @@ h1, h2, h3, h4, h5, h6, p, button span{
     font-size: 26px;
 }
 
+/* first half of heading */
 .first_half {
     color: var(--dark-green-color);
 }
 
+/* second half of heading */
 .second_half {
     color: var(--light-green-color);
     font-weight: 400;
 }
 
+/* for sunglasses items container */
 .offer_container_sunglasses_list {
     padding: 3rem  0;
-    width: 100%;
+    width: 85%;
     display: flex;
     align-items: center;
 }
@@ -79,13 +107,13 @@ h1, h2, h3, h4, h5, h6, p, button span{
     
 }
 
-
-
+.offer_container_sunglasses_list img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
 
 
 .first_display {
     display: flex;
-    /* gap: 5rem; */
     justify-content: center;
     width: 100%;
     align-items: center;
@@ -93,20 +121,12 @@ h1, h2, h3, h4, h5, h6, p, button span{
 
 .second_display {
     display: none;
-    /* gap: 5rem; */
     justify-content: center;
     width: 100%;
     align-items: center;
 }
 
-.sub_container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+/* styling the buttons */
 .offer_container_button{
     display: flex;
     justify-content: center;
@@ -140,7 +160,7 @@ h1, h2, h3, h4, h5, h6, p, button span{
 }
 
 
-
+/* sub headings in container */
 .paragraph1 {
     text-align: center;
     letter-spacing: 2px;
@@ -163,11 +183,275 @@ h1, h2, h3, h4, h5, h6, p, button span{
     color: var(--light-green-color);
 }
 
-.previous_icon {
-    border: 2px border blue;
+.offer_container_sunglasses_list div svg {
+    font-size: 3rem;
 }
 
-.offer_container_sunglasses_list img:hover {
-    transform: scale(1.1); /* Scale up the image on hover */
+/* footer section styling */
+.footer {
+    background-color: rgb(0, 0, 66);
+  }
+ 
+  
+  .footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 3.75rem 2.5rem;
+    color: #fff;
+  }
+  
+  .footer-links .footer-left-link {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+  
+  .footer-links .footer-left-link p {
+    line-height: 1.5625rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 0 0.625rem;
+  }
+  
+  .footer-links .footer-left-link ul li {
+    list-style-type: none;
+    line-height: 1.0625rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    letter-spacing: 0.0187rem;
+  }
+  
+  .footer-links .footer-left-link ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links .footer-right-link {
+    width: 25%;
+    margin-top: 3.125rem;
+    /* border: 1px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links .footer-right-link .applinks {
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.625rem 0 1.25rem;
+  }
+  
+  .footer-links .footer-right-link .app-releated-text p {
+    text-align: center;
+    font-size: 0.875rem;
+    letter-spacing: 0.0437rem;
+    line-height: 1.4287;
+  }
+  
+  .footer hr {
+    width: 92.4%;
+    margin: 0 auto;
+  }
+  
+  .footer-bottom-part {
+    padding: 2.5rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-bottom-part .leftpart {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+  }
+  
+  .footer-bottom-part .leftpart a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.875rem;
+    letter-spacing: 0.0437rem;
+  }
+  
+  .footer-bottom-part .rightpart {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 1.25rem;
+  }
+  
+  .footer-bottom-part .rightpart .b-right {
+    font-size: 0.8125rem;
+    color: #fff;
+    line-height: 1.5;
+    padding-left: 0.625rem;
+  }
+  
+  .footer-bottom-part .rightpart .b-icons {
+    display: flex;
+    align-items: center;
+    padding-left: 0.4375rem;
+  }
+  
+  .footer-bottom-part .rightpart .b-icons a {
+    padding-left: 0.625rem;
+    font-size: 1.375rem;
+  }
+
+  @media screen and (max-width:1000px) {
+    .footer-links .footer-left-link{
+      width: 55%;
+    }
+  }
+
+
+  @media screen and (max-width:600px) {
+    .footer-links{
+      flex-direction: column;
+    }
+    .footer-links .footer-left-link{
+      width: 100%;
+    }
+    .footer-links .footer-right-link{
+      width: 100%;
+    }
+    .footer-bottom-part{
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    .footer-bottom-part .leftpart{
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .footer-links .footer-left-link{
+      gap: 2rem;
+      flex-wrap: 2rem;
+    }
+  }
+
+/* Media query for screens below 500px */
+@media screen and (min-width: 401px) and (max-width: 500px) {
+
+    .first_half, .second_half{
+        font-size: 20px; 
+    }
+
+    .picture_section {
+        width: 100%;
+        max-height: none;
+    }
+
+    .matter_container h2 {
+        padding: 1rem 2rem 0;
+    }
+
+    .first_button, .second_button {
+        font-size: small; 
+        padding: 0.4rem 1rem; 
+    }
+
+    
+    .paragraph1 {
+        display: flex;
+        align-items: center;
+        font-size: 12px; 
+    }
+
+    .paragraph2 {
+        font-size: 12px; 
+    }
+
+    .paragraph2_firsthalf, .paragraph2_secondhalf {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .offer_container_sunglasses_list div svg {
+        font-size: 20px;
+    }
 }
 
+/* Media query for screens below 400px */
+@media screen and (min-width: 351px) and (max-width: 400px) {
+   
+    .first_half, .second_half{
+        font-size: 18px; 
+    }
+
+    
+    .matter_container h2 {
+        padding: 0.5rem 1rem 0; 
+    }
+
+    .offer_container_sunglasses_list  {
+        padding: 1rem 0;
+    }
+
+    .first_button, .second_button {
+        font-size: x-small; 
+        padding: 0.3rem 0.8rem; 
+    }
+
+    
+    .paragraph1 {
+        font-size: 10px;
+    }
+
+    .paragraph2 {
+        font-size: 10px;
+    }
+
+    .paragraph2_firsthalf, .paragraph2_secondhalf {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Media query for screens below 350px */
+@media screen and (max-width: 350px) {
+    
+    
+    .first_half, .second_half{
+        font-size: 16px; 
+    }
+
+    
+    .matter_container h2 {
+        padding: 0.5rem 0.8rem 0; 
+    }
+
+    
+    .offer_container_sunglasses_list  {
+        padding: 0.2rem 0;
+    }
+
+    
+    .first_button, .second_button {
+        font-size: xx-small; 
+        padding: 0.2rem 0.6rem; 
+    }
+
+   
+    .paragraph1 {
+        font-size: 8px; 
+    }
+
+    .paragraph2 {
+        font-size: 8px; 
+    }
+
+    .paragraph2_firsthalf, .paragraph2_secondhalf {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+}
