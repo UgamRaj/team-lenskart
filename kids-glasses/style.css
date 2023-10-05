@@ -518,6 +518,7 @@ main {
   .left-store-locator-box{
     padding:0 2rem;
     width: 40%;
+    
   }
   .right-store-locator-box{
     padding-top:3rem;
@@ -535,16 +536,18 @@ main {
       font-weight: 300;
       letter-spacing: 0.04rem;
       font-size: 1.25rem;
-      line-height: 2.5rem;
+      line-height: 2.3rem;
+      margin-top: 24px;
   }
   .left-store-locator-box-content button{
     padding: 1rem 2.5rem; 
     font-size: 1.125rem;
     color: #000042;
     border-radius: 1.75rem;
-    font-weight: bold;
+    font-weight: 400;
     border: 1px solid #000042;
     background-color: transparent;
+    margin-top: 28px;
   }
   .left-store-locator-box-content button:hover{
     background-color: #000042;
@@ -586,8 +589,8 @@ main {
     display: none;
     position: absolute;
     z-index: 10000;
-    width: 93%;
-    left: 2.25rem;
+    width: 98%;
+    left: 1.25rem;
     height: 26.25rem;
     background-color: white;
     padding: 0 1rem;
@@ -702,6 +705,7 @@ span {
     /* border: 2px solid red; */
     display: flex;
     margin-top: -4px;
+    margin-bottom: 12px;
     /* position: sticky;
     top: 0; */
 }
@@ -717,12 +721,16 @@ span {
 }
 .box-1 {
     /* border: 2px solid red; */
+    
 }
 .age {
     /* border: 2px solid greenyellow; */
     margin: 16px 0;
     font-size: 13px;
     color: #333333;
+}
+.age-group {
+  overflow-y: scroll;
 }
 .age-chart:hover {
     color: #000042;
@@ -798,6 +806,9 @@ span {
        display: none;
        flex-direction: column;
        width: 100%;
+}
+.check>p:hover {
+  color: #000042;
 }
 .check {
     display: flex;
@@ -967,6 +978,8 @@ span {
     width: min-content;
     height: max-content;
     border-radius: 8px;
+    cursor: pointer;
+    
 }
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 16px 0px;
@@ -1098,6 +1111,7 @@ span {
 /* footer here */
 .footer {
   background-color: rgb(0, 0, 66);
+  margin: 0 -28px;
 }
 
 
