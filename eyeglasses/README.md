@@ -68,5 +68,5 @@ Features :
 Key features of this project include:
 Responsive design for same user experience on all devices.
 Interactive product sliders that allow users to explore different sunglasses.
-Our project is designed to be straightforward, so you can easily find your way around the sunglasses catalog.
+Our project is designed to be straightforward, so you can easily find your way around the eyeglasses catalog.
 Subtle animations are applied to enhance user interactions.
