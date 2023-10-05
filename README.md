@@ -1,6 +1,6 @@
 # team-lenskart
 
-Hosted Link ->
+### Hosted Link ->https://aadarsh-raj.github.io/lenskart-mct/computer-glasses.html
 
 ## Introduction
 This is the page I have to clone(link:- https://www.lenskart.com/eyeglasses/collections/all-computer-glasses.html). The page is based for all users of desktop, tab and mobiles with a responsive functionality.<br>
