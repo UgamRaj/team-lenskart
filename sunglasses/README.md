@@ -4,7 +4,7 @@ This project is a clone of the sunglasses page from the Lenskart website. It rep
 
 ## Table of Contents
 - [Project Description](#project-description)
-- [Screenshots](#sreenshots)
+- [Screenshots](#screenshots)
 - [Technologies Used](technologies-used)
 - [Challenges Faced](#challenges-faced)
 - [Features](#features)
