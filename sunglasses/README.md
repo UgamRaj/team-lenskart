@@ -20,3 +20,8 @@ This project is a front-end clone of the Lenskart sunglasses page. It aims to pr
 
 #### Navbar
 
+![Screenshot (208)](https://github.com/UgamRaj/team-lenskart/assets/134683293/0ce95c99-672c-47d5-b2de-86cb3c4240d8)
+
+This is the header part of the webpage 
+
+
