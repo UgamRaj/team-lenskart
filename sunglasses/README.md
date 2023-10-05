@@ -10,7 +10,6 @@ This project is a clone of the sunglasses page from the Lenskart website. It rep
 - [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Description
 
@@ -137,7 +136,7 @@ To run this project locally, follow these steps:
 
 2. Open the index.html file in your web browser to view the Lenskart sunglasses page clone.
 
-## Contribution
+## Contributing
 
 If you would like to contribute to this project, please follow these steps:
 
