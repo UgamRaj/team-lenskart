@@ -101,6 +101,58 @@ This are the different sub containers in mid container
 this is footer section of the webpage.
 
 
+## Technologies Used
+
+This project was built using the following technologies and libraries:
+
+- HTML
+- CSS
+- JavaScript
+
+## Challenges Faced
+
+During the development of this project, we faced a few challenges, including:
+
+- Implementing responsive design for a variety of screen sizes.
+- Implementing the carousel effect using optimized java script.
+- Achieving pixel-perfect styling and layout was time-consuming, especially given the rich design of the Lenskart website.
+
+To overcome these challenges, we have explore through different platforms and with help of mentor and team work.
+
+## Features
+
+Key features of this project include:
+
+- Responsive design for same user experience on all devices.
+- Interactive product sliders that allow users to explore   different sunglasses.
+-   Our project is designed to be straightforward, so you can easily find your way around the sunglasses catalog. 
+- Subtle animations are applied to enhance user interactions.
+
+## Usage
+
+To run this project locally, follow these steps:
+
+1. Clone this repository to your local machine using the following command:
+  git clone <repository-url>
+
+2. Open the index.html file in your web browser to view the Lenskart sunglasses page clone.
+
+## Contribution
+
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature or bug fix:
+git checkout -b feature/your-feature-name
+
+3. Make your changes and commit them with descriptive messages.
+
+4. Push your changes to your forked repository.
+
+5. Create a pull request to the original repository, explaining your changes and why they should be merged.
+
+
 
 
 
