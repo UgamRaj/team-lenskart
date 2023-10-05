@@ -1,52 +1,29 @@
-/* used variables for different colors */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-    --dark-green-color: #445962;
-    --light-green-color: #329C92;
-    --light-grey-color: rgb(212, 212, 212);
-    --dark-grey-color: #424244;
+  --dark-blue-100: #000042;
+  --white: #fff;
 }
-
-/* for viewport */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* to display vertically */
-.main-section {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-}
-
-/* to give font for all writing part */
-h1, h2, h3, h4, h5, h6, p, button span{
-    font-family: LKSana-Bold, Arial, Helvetica, sans-serif;
-}
-
-/* header section styling */
+/* ------------------Header -------------------- */
 .header {
   height: 155px;
-  /* background-color: black; */
+  background-color: black;
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 10;
 }
 
-.main-section-middle-one {
-  position: relative;
-  top: 20px;
-  margin-top: 0;
-}
-
 .nav {
   width: 100%;
 
-  /* padding: 1rem 1rem 0; */
+
   position: fixed;
   top: 0;
   left: 0;
@@ -202,6 +179,10 @@ h1, h2, h3, h4, h5, h6, p, button span{
   letter-spacing: 0.0313rem;
 }
 
+.nav-bottem-layer .nav-bottem-left .grid-container a {
+  line-height: 1.5rem;
+}
+
 .nav-bottem-layer .nav-bottem-right {
   display: flex;
   /* width: 20%; */
@@ -219,7 +200,6 @@ h1, h2, h3, h4, h5, h6, p, button span{
   height: 100%;
   border-radius: 0.3125rem;
 }
-
 
 /* Eye-glasses-hover-section */
 
@@ -309,10 +289,6 @@ h1, h2, h3, h4, h5, h6, p, button span{
 
   margin: 0px;
   padding: 0px;
-}
-
-.nav-bottem-layer .nav-bottem-left .grid-container a {
-  line-height: 1.5rem;
 }
 
 .icon-svg-div {
@@ -445,10 +421,6 @@ a {
   font-size: 0.875rem;
   font-family: LKFuturaStd-Heavy, Arial, Helvetica, sans-serif;
 }
-
-
-
-
         /* home-eye-test-on-hover */
         .sec-main {
           background-color: white;
@@ -509,16 +481,7 @@ a {
 
 
 
-
-
-
-
-
-
 /* store-locator-on-hover */
-
-
-
 
 .left-store-locator-box,.right-store-locator-box{
   display: flex;
@@ -664,454 +627,6 @@ right: -0.25rem;
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* styling the horizontal line */
-.divider {
-    border: none;
-    background-color:var(--light-grey-color);
-    height: 1px;
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-}
-
-/* to fit the ad picture correct to viewport */
-.picture_section {
-    width: 100%;
-    max-height: 20vh;
-    overflow: hidden;
-    text-align: center;
-}
-
-.picture_section img {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-}
-
-/* to give styling for every container */
-.sub_container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* to hightlight the heading in every container */
-.matter_container h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 2rem 4rem 0;
-    font-size: 26px;
-}
-
-/* first half of heading */
-.first_half {
-    color: var(--dark-green-color);
-}
-
-/* second half of heading */
-.second_half {
-    color: var(--light-green-color);
-    font-weight: 400;
-}
-
-/* for sunglasses items container */
-.offer_container_sunglasses_list {
-    padding: 3rem  0;
-    width: 85%;
-    display: flex;
-    align-items: center;
-}
-
-.offer_container_sunglasses_list img {
-    
-    width: 30%;
-    height: 20%;
-    /* object-fit: contain; */
-    cursor: pointer;
-    padding: 0 30px;
-    transition: transform 1s;
-    
-}
-
-.offer_container_sunglasses_list img:hover {
-    transform: scale(1.1); /* Scale up the image on hover */
-}
-
-
-.first_display {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-
-.second_display {
-    display: none;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-
-/* styling the buttons */
-.offer_container_button{
-    display: flex;
-    justify-content: center;
-    gap: 0.4rem;
-    padding: 0 0 20px;
-    margin: 1rem;
-    
-}
-
-.first_button, .second_button {
-    font-weight: 700;
-    font-size:medium;
-    cursor: pointer;
-}
-
-
-.first_button {
-   padding: 0.6rem 2rem;
-   background-color: var(--light-green-color);
-   color: white;
-
-   border: 1px solid var(--light-green-color);
-   font-family: Arial, Helvetica, sans-serif;
-}
-
-.second_button {
-    padding: 0.5rem 2rem;
-    background-color: white;
-    color: var(--light-green-color);
-    border: 1px solid var(--light-green-color);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* sub headings in container */
-.paragraph1 {
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 10px 0;
-    font-size: 15px
-}
-
-.paragraph2 {
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.paragraph2_firsthalf {
-    font-weight:bolder;
-    color: var(--dark-grey-color);
-}
-
-.paragraph2_secondhalf {
-    font-weight: bolder;
-    color: var(--light-green-color);
-}
-
-.offer_container_sunglasses_list div svg {
-    font-size: 3rem;
-}
-
-/* footer section styling */
-.footer {
-    background-color: rgb(0, 0, 66);
-  }
- 
-  
-  .footer-links {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25rem 3.75rem 2.5rem;
-    color: #fff;
-  }
-  
-  .footer-links .footer-left-link {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-  }
-  
-  .footer-links .footer-left-link p {
-    line-height: 1.5625rem;
-    font-size: 1.25rem;
-    margin: 1.25rem 0 0.625rem;
-  }
-  
-  .footer-links .footer-left-link ul li {
-    list-style-type: none;
-    line-height: 1.0625rem;
-    font-size: 0.75rem;
-    margin-bottom: 0.625rem;
-    padding-top: 0.625rem;
-    letter-spacing: 0.0187rem;
-  }
-  
-  .footer-links .footer-left-link ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-links .footer-right-link {
-    width: 25%;
-    margin-top: 3.125rem;
-    /* border: 1px solid hotpink; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-links .footer-right-link .applinks {
-    display: flex;
-    justify-content: center;
-    gap: 0.625rem;
-    width: 100%;
-    padding: 0.625rem 0 1.25rem;
-  }
-  
-  .footer-links .footer-right-link .app-releated-text p {
-    text-align: center;
-    font-size: 0.875rem;
-    letter-spacing: 0.0437rem;
-    line-height: 1.4287;
-  }
-  
-  .footer hr {
-    width: 92.4%;
-    margin: 0 auto;
-  }
-  
-  .footer-bottom-part {
-    padding: 2.5rem 3.75rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer-bottom-part .leftpart {
-    display: flex;
-    width: 20%;
-    justify-content: space-between;
-  }
-  
-  .footer-bottom-part .leftpart a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.875rem;
-    letter-spacing: 0.0437rem;
-  }
-  
-  .footer-bottom-part .rightpart {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-right: 1.25rem;
-  }
-  
-  .footer-bottom-part .rightpart .b-right {
-    font-size: 0.8125rem;
-    color: #fff;
-    line-height: 1.5;
-    padding-left: 0.625rem;
-  }
-  
-  .footer-bottom-part .rightpart .b-icons {
-    display: flex;
-    align-items: center;
-    padding-left: 0.4375rem;
-  }
-  
-  .footer-bottom-part .rightpart .b-icons a {
-    padding-left: 0.625rem;
-    font-size: 1.375rem;
-  }
-
-  @media screen and (max-width:1000px) {
-    .footer-links .footer-left-link{
-      width: 55%;
-    }
-  }
-
-
-  @media screen and (max-width:600px) {
-    .footer-links{
-      flex-direction: column;
-    }
-    .footer-links .footer-left-link{
-      width: 100%;
-    }
-    .footer-links .footer-right-link{
-      width: 100%;
-    }
-    .footer-bottom-part{
-      flex-direction: column;
-      align-items: center;
-     
-    }
-    .footer-bottom-part .leftpart{
-      width: 100%;
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  @media screen and (max-width:500px) {
-    .footer-links .footer-left-link{
-      gap: 2rem;
-      flex-wrap: 2rem;
-    }
-  }
-
-/* Media query for screens below 500px */
-@media screen and (min-width: 401px) and (max-width: 500px) {
-
-    .first_half, .second_half{
-        font-size: 20px; 
-    }
-
-    .picture_section {
-        width: 100%;
-        max-height: none;
-    }
-
-    .matter_container h2 {
-        padding: 1rem 2rem 0;
-    }
-
-    .first_button, .second_button {
-        font-size: small; 
-        padding: 0.4rem 1rem; 
-    }
-
-    
-    .paragraph1 {
-        display: flex;
-        align-items: center;
-        font-size: 12px; 
-    }
-
-    .paragraph2 {
-        font-size: 12px; 
-    }
-
-    .paragraph2_firsthalf, .paragraph2_secondhalf {
-        display: block;
-        display: flex;
-        justify-content: center;
-    }
-
-    .offer_container_sunglasses_list div svg {
-        font-size: 20px;
-    }
-
-}
-
-/* Media query for screens below 400px */
-@media screen and (min-width: 351px) and (max-width: 400px) {
-   
-    .first_half, .second_half{
-        font-size: 18px; 
-    }
-
-    
-    .matter_container h2 {
-        padding: 0.5rem 1rem 0; 
-    }
-
-    .offer_container_sunglasses_list  {
-        padding: 1rem 0;
-    }
-
-    .first_button, .second_button {
-        font-size: x-small; 
-        padding: 0.3rem 0.8rem; 
-    }
-
-    
-    .paragraph1 {
-        font-size: 10px;
-    }
-
-    .paragraph2 {
-        font-size: 10px;
-    }
-
-    .paragraph2_firsthalf, .paragraph2_secondhalf {
-        display: block;
-        display: flex;
-        justify-content: center;
-    }
-
-    .offer_container_sunglasses_list div svg {
-      font-size: 15px;
-  }
-}
-
-/* Media query for screens below 350px */
-@media screen and (max-width: 350px) {
-    
-    
-    .first_half, .second_half{
-        font-size: 16px; 
-    }
-
-    
-    .matter_container h2 {
-        padding: 0.5rem 0.8rem 0; 
-    }
-
-    
-    .offer_container_sunglasses_list  {
-        padding: 0.2rem 0;
-    }
-
-    
-    .first_button, .second_button {
-        font-size: xx-small; 
-        padding: 0.2rem 0.6rem; 
-    }
-
-   
-    .paragraph1 {
-        font-size: 8px; 
-    }
-
-    .paragraph2 {
-        font-size: 8px; 
-    }
-
-    .paragraph2_firsthalf, .paragraph2_secondhalf {
-        display: block;
-        display: flex;
-        justify-content: center;
-    }
-
-    .offer_container_sunglasses_list div svg {
-      font-size: 10px;
-  }
-}
-
 .nav-search span{
   display: none;
 }
@@ -1177,7 +692,11 @@ right: -0.25rem;
 }
 
 @media screen and (max-width:520px) {
+  .nav-bottem-layer{
+    display:none;
+  }
   .second-section-right-card-items{
+
       width: min-content;
   }
   .nav-top-layer{
@@ -1211,10 +730,6 @@ right: -0.25rem;
   .home-nav-on-phone{
       display: inline;
   }
-
-  .nav-top-layer, .nav-bottem-layer{
-    display: none;
-}
   .nav-logo-number .lenskart-logo{
       display: none;
   }
@@ -1222,29 +737,229 @@ right: -0.25rem;
       display: block;
       width: 3.5rem;
   }
-
-  .header {
-    position: relative;
-    
-  }
-
-  .nav {
-    position: relative;
-    padding: 0;
-  }
-
-  .nav-middle-layer {
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 10;
-  }
-
-  .home-nav-on-phone {
-    position: relative;
-    top: 45px;
-  }
-
 }
+
+.footer-bottom-part .rightpart .followus {
+  margin-right:10px;
+}
+
+.footer-bottom-part .rightpart{
+  color:white;
+  display:flex;
+}
+.footer-bottom-part .rightpart img{
+width:20px;
+margin:0px 10px;
+}
+
+
+
+/* Eyeglasses */
+.border-b {
+  width: 80%;
+  display: flex;
+  border-bottom: 1px solid #cfcdcd;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+
+.border-b .left-text {
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.border-b .right-link {
+  font-size: 1.7rem;
+  text-align: right;
+}
+.border-b .right-link a {
+  color: rgb(50, 156, 146);
+}
+
+.videos-section {
+  width: 100%;
+  background-color: #fff092;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.videos-section .video-heading h3 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 5rem 1rem;
+  color: #504e41;
+}
+
+.custumer-review {
+  width: 100%;
+  /* max-width: 1350px; */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 5rem;
+}
+
+.custumer-review .custumer {
+  padding: 0 2%;
+  width: 38%;
+}
+
+/* ---------------------Footer------------------------ */
+
+.footer {
+  background-color: rgb(0, 0, 66);
+}
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 3.75rem 2.5rem;
+  color: #fff;
+}
+
+.footer-links .footer-left-link {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.footer-links .footer-left-link p {
+  line-height: 1.5625rem;
+  font-size: 1.25rem;
+  margin: 1.25rem 0 0.625rem;
+}
+
+.footer-links .footer-left-link ul li {
+  list-style-type: none;
+  line-height: 1.0625rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+  padding-top: 0.625rem;
+  letter-spacing: 0.0187rem;
+}
+
+.footer-links .footer-left-link ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links .footer-right-link {
+  width: 25%;
+  margin-top: 3.125rem;
+  /* border: 1px solid hotpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links .footer-right-link .applinks {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.625rem 0 1.25rem;
+}
+
+.footer-links .footer-right-link .app-releated-text p {
+  text-align: center;
+  font-size: 0.875rem;
+  letter-spacing: 0.0437rem;
+  line-height: 1.4287;
+}
+
+.footer hr {
+  width: 92.4%;
+  margin: 0 auto;
+}
+
+.footer-bottom-part {
+  padding: 2.5rem 3.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-part .leftpart {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.footer-bottom-part .leftpart a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.875rem;
+  letter-spacing: 0.0437rem;
+}
+
+.footer-bottom-part .rightpart {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 1.25rem;
+}
+
+.footer-bottom-part .rightpart .b-right {
+  font-size: 0.8125rem;
+  color: #fff;
+  line-height: 1.5;
+  padding-left: 0.625rem;
+}
+
+.footer-bottom-part .rightpart .b-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 0.4375rem;
+}
+
+.footer-bottom-part .rightpart .b-icons a {
+  padding-left: 0.625rem;
+  font-size: 1.375rem;
+}
+
+.footer-bottom-part .rightpart .followus {
+  margin-right:10px;
+}
+
+.footer-bottom-part .rightpart{
+  color:white;
+  display:flex;
+}
+.footer-bottom-part .rightpart img{
+width:20px;
+margin:0px 10px;
+}
+
+/* -------------Parwinder Singh CSS file------------------- */
+.brands{
+  margin: 0px;
+  padding: 8px;
+  font-size: 19.5px;
+  text-align:center;
+  background-color: #F0F0F0;
+}
+.colbox3 {
+  width: 8.1%;
+  padding-right: 0.3%;
+  height: 30px;
+}
+.buyContactH3{
+  font-family:'the-sans-regular', sans-serif;   
+  font-size: 30px;
+ 
+ }
+ .buyContactP{
+  font-size: 20px;
+ }
+.fntclass{
+  font-size:18px;
+  text-align: center;
+  color:white
+}
+.topmargin{
+  margin-top:1%;
+}
+.topmargin h2{
+  padding:2px 0px;
+}
+/* ---------------------------------------------------------- */
