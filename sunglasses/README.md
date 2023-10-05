@@ -10,6 +10,7 @@ This project is a clone of the sunglasses page from the Lenskart website. It rep
 - [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Hosted Link](#hosted-link)
 
 ## Project Description
 
