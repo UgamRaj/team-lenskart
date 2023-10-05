@@ -3,7 +3,7 @@
 Hosted Link ->
 
 ## Introduction
-This page is the clone for one of the page of Lenskart website(link:- https://www.lenskart.com/eyeglasses/collections/all-computer-glasses.html). The page is based for all users of desktop, tab and mobiles.<br>
+This is the page I have to clone(link:- https://www.lenskart.com/eyeglasses/collections/all-computer-glasses.html). The page is based for all users of desktop, tab and mobiles with a responsive functionality.<br>
 
 ## Features
 It has a fixed view port area and have some scrolling effect.<br>
