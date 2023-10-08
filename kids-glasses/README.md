@@ -13,7 +13,8 @@
 ## Project Description 
 This project is a front-end clone of the Lenskart sunglasses page. It aims to provide users with a similar experience to the original Lenskart website.
 
-##Hosted Link : https://ugamraj.github.io/team-lenskart/kids-glasses/index.html
+##Hosted Link
+- https://ugamraj.github.io/team-lenskart/kids-glasses/index.html
 ##Screenshots
 ![Screenshot 2023-10-05 143059](https://github.com/UgamRaj/team-lenskart/assets/128147644/7dbbe676-c163-43f8-87ca-0e99a2a11d9d)
 ![Screenshot 2023-10-05 143212](https://github.com/UgamRaj/team-lenskart/assets/128147644/699d3fd1-2881-44ef-b0b4-36da05f937aa)
